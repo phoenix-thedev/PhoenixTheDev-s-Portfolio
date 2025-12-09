@@ -371,7 +371,7 @@ body {
 <script>
   const music = document.getElementById('bg-music');
   music.volume = 0.15;
-  music.Play()
+  music.play()
 </script>
 
 </main>
@@ -434,7 +434,7 @@ class Snowflake {
 
 function initSnow() {
     resize();
-    for (let i = 0; i < 75; i++) {
+    for (let i = 0; i < 100; i++) {
         particles.push(new Snowflake());
     }
     animateSnow();
@@ -574,5 +574,6 @@ window.onload = () => {
   </script>
 </body>
 </html>
+
 
 
