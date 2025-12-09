@@ -8,6 +8,16 @@
   <title>PhoenixTheDev's Portfolio</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhoenixTheDev's Portfolio</title>
+
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
 body {
@@ -62,7 +72,7 @@ body {
         <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
             <div class="relative group">
                 <div class="absolute inset-0 bg-gradient-to-tr from-themeGreen to-themeRed rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-                <img src="https://cdn.discordapp.com/attachments/1432734860874874982/1447179182768521277/AqzZ4aY.png?ex=6936ae24&is=69355ca4&hm=41eda096fa9d6e7cea427b63675afe45eaa44d02ecf55d9cf78e9a4b9f5cb32e&" alt="Profile" class="relative w-40 h-40 rounded-full border-4 border-cardBg object-cover shadow-2xl z-10">
+                <img src="ProfilePictureV1.png" alt="Profile" class="relative w-40 h-40 rounded-full border-4 border-cardBg object-cover shadow-2xl z-10">
             </div>
             
             <div class="text-center md:text-left max-w-2xl">
@@ -135,7 +145,7 @@ body {
 <div class="game-card bg-[#1a1a1a] rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 border border-gray-800 hover:border-themeGreen group">
 
     <div class="relative w-full aspect-video overflow-hidden bg-[#1a1a1a]">
-        <img src="https://cdn.discordapp.com/attachments/1432734860874874982/1447315641953423360/BNTTQeG.png?ex=69387eba&is=69372d3a&hm=17d857d7a52c8547cfff6461938504d79e2392c214a677235d3e6ac594795539&"
+        <img src="TerrainGenerationThumb.png"
              class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
         <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
     </div>
@@ -197,7 +207,7 @@ body {
 <div class="game-card bg-[#1a1a1a] rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 border border-gray-800 hover:border-themeGreen group">
 
     <div class="relative w-full aspect-video overflow-hidden bg-[#1a1a1a]">
-        <img src="https://cdn.discordapp.com/attachments/1432734860874874982/1447693529567465533/GAPav0s.png?ex=69388d2a&is=69373baa&hm=698706235b8ce4f18ad63b857b0786156fb69a25fd7b68e1a40e63712faf709c&"
+        <img src="TycoonFrameworkThumb.png"
              class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
         <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
     </div>
@@ -362,23 +372,12 @@ body {
     </footer>
 
 <audio id="bg-music" 
-       src="https://cdn.discordapp.com/attachments/1432734860874874982/1447251832995975219/EW0KEbR.mp3?ex=6938434d&is=6936f1cd&hm=a63419b0160ae565c8e46715f8ed877142d3ca3985ee95876fc10fb027c4901b&" 
+       src="BackgroundMusic.mp3" 
        loop></audio> 
 <script>
   const music = document.getElementById('bg-music');
   music.volume = 0.15;
-  
-  // Attempt to play the music after a very short delay
-  setTimeout(() => {
-    music.play()
-      .then(() => {
-        console.log("Audio started successfully.");
-      })
-      .catch((error) => {
-        // This is the common outcome in modern browsers
-        console.warn("Autoplay was blocked. User interaction is required.", error);
-      });
-  }, 100); // 100ms delay
+  music.play();
 </script>
 
 </main>
@@ -460,10 +459,10 @@ window.addEventListener('resize', resize);
 initSnow();
 
 const MOCK_GAMES_DATA = [
-    { title: "Catch A Zoo", thumbnail: "https://tr.rbxcdn.com/180DAY-9e403cf16a40609adad184ba27b29369/768/432/Image/Webp/noFilter$0", playing: 5041, visits: 7004712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
-    { title: "Endzone Strike", thumbnail: "https://tr.rbxcdn.com/180DAY-396c2a5ddd0b48656d543f4e9a8e8f5f/768/432/Image/Webp/noFilter$0", playing: 262, visits: 35912, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
-    { title: "Nuke A City", thumbnail: "https://tr.rbxcdn.com/180DAY-853f67b82b9ae249493dbaa3d057ec60/768/432/Image/Webp/noFilter$0", playing: 98, visits: 33402, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
-    { title: "Slap Tower of Trolling", thumbnail: "https://tr.rbxcdn.com/180DAY-882dd111893879199ea2b9555e45acd1/768/432/Image/Webp/noFilter$0", playing: 54, visits: 36981, url: "https://www.roblox.com/games/85009444133440/Slap-Tower-of-Trolling" },
+    { title: "Catch A Zoo", thumbnail: "CatchAZooThumb.webp", playing: 5041, visits: 7004712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
+    { title: "Endzone Strike", thumbnail: "EndzoneStrikeThumb.webp", playing: 262, visits: 35912, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
+    { title: "Nuke A City", thumbnail: "NukeACityThumb.webp", playing: 98, visits: 33402, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
+    { title: "Slap Tower of Trolling", thumbnail: "SlapTowerOfTrollingThumb.webp", playing: 54, visits: 36981, url: "https://www.roblox.com/games/85009444133440/Slap-Tower-of-Trolling" },
 ];
 
 function formatNumber(num) {
@@ -576,6 +575,11 @@ window.onload = () => {
         });
     });
 };
+
+
+  </script>
+</body>
+</html>
 
   </script>
 </body>
