@@ -345,36 +345,15 @@
     <footer class="text-center text-gray-600 text-sm pb-8">
         <p>&copy; 2025. Made by Phoenix, AI Assisted (framework).</p>
     </footer>
-
-    <audio id="bg-music" src="bg_music.mp3" loop muted autoplay></audio> 
-    <div style="position:fixed; bottom:20px; right:20px; z-index:100;">
-        <button id="unmute-btn" class="bg-themeGreen text-black px-4 py-2 rounded-full font-bold hover:scale-105 transition">
-            <i class="fa-solid fa-volume-high"></i> Play Music
-        </button>
-    </div>
-
 </main>
 
 <script>
-// --- AUDIO & SNOW LOGIC ---
+
+<audio id="bg-music" src="bg_music.mp3" loop muted autoplay></audio> 
+
 const music = document.getElementById('bg-music');
 const unmuteBtn = document.getElementById('unmute-btn');
 music.volume = 0.15;
-
-// Try autoplay
-music.play().then(() => {
-    // If successful, button can hide or change to pause
-    unmuteBtn.style.display = 'none'; 
-}).catch(() => {
-    // If blocked, button stays to allow user interaction
-    console.log("Autoplay blocked, waiting for click");
-});
-
-unmuteBtn.addEventListener('click', () => {
-    music.muted = false;
-    music.play();
-    unmuteBtn.style.display = 'none';
-});
 
 const canvas = document.getElementById('snow-canvas');
 const ctx = canvas.getContext('2d');
@@ -434,10 +413,10 @@ initSnow();
 
 // --- GAME DATA (Using Local Images as requested) ---
 const MOCK_GAMES_DATA = [
-    { title: "Catch A Zoo", thumbnail: "catchazoo.webp", playing: 5041, visits: 7004712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
-    { title: "Endzone Strike", thumbnail: "endzonestrike.webp", playing: 262, visits: 35912, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
-    { title: "Nuke A City", thumbnail: "nukeacity.webp", playing: 98, visits: 33402, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
-    { title: "Slap Tower of Trolling", thumbnail: "slaptoweroftrolling.webp", playing: 54, visits: 36981, url: "https://www.roblox.com/games/85009444133440/Slap-Tower-of-Trolling" },
+    { title: "Catch A Zoo", thumbnail: "CatchAZooThumb.webp", playing: 5041, visits: 7004712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
+    { title: "Endzone Strike", thumbnail: "EndzoneStrikeThumb.webp", playing: 262, visits: 44021, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
+    { title: "Nuke A City", thumbnail: "NukeACityThumb.webp", playing: 98, visits: 33402, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
+    { title: "Slap Tower of Trolling", thumbnail: "SlapTowerOfTrollingThumb.webp", playing: 54, visits: 36981, url: "https://www.roblox.com/games/85009444133440/Slap-Tower-of-Trolling" },
 ];
 
 function formatNumber(num) {
@@ -558,3 +537,4 @@ window.onload = () => {
 </script>
 </body>
 </html>
+
