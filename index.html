@@ -452,12 +452,14 @@ function animateSnow() {
 window.addEventListener('resize', resize);
 initSnow();
 
+
 const MOCK_GAMES_DATA = [
-    { title: "Catch A Zoo", thumbnail: "CatchAZooThumb.webp", playing: 5041, visits: 7104712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
-    { title: "Endzone Strike", thumbnail: "EndzoneStrikeThumb.webp", playing: 3791, visits: 789172, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
-    { title: "Nuke A City", thumbnail: "NukeACityThumb.webp", playing: 98, visits: 35739, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
+    { title: "Catch A Zoo", thumbnail: "CatchAZooThumb.webp", playing: 5041, visits: 7109712, url: "https://www.roblox.com/games/133973973326309/Catch-A-Zoo" },
+    { title: "Endzone Strike", thumbnail: "EndzoneStrikeThumb.webp", playing: 3791, visits: 1056821, url: "https://www.roblox.com/games/104724796200625/Endzone-Strike$0" },
+    { title: "Nuke A City", thumbnail: "NukeACityThumb.webp", playing: 98, visits: 35939, url: "https://www.roblox.com/games/117143317369237/Nuke-a-City$0" },
     { title: "Slap Tower of Trolling", thumbnail: "SlapTowerOfTrollingThumb.webp", playing: 54, visits: 36981, url: "https://www.roblox.com/games/85009444133440/Slap-Tower-of-Trolling" },
-   { title: "Grow a Fast Food Empire!", thumbnail: "growafastfoodempirethumb.webp", playing: 12, visits: 824, url: "https://www.roblox.com/games/112024044825224/Grow-A-FastFood-Empire" },
+    { title: "Grow a Fast Food Empire!", thumbnail: "growafastfoodempirethumb.webp", playing: 12, visits: 824, url: "https://www.roblox.com/games/112024044825224/Grow-A-FastFood-Empire" },
+    { title: "Find the Scary Brainrot!", thumbnail: "findthescarybrainrot.webp", playing: 1562, visits: 372618, url: "https://www.roblox.com/games/77526941052258/Find-The-Scary-Brainrot" },
 ];
 
 function formatNumber(num) {
@@ -483,7 +485,7 @@ function calculateTotalStats(data) {
     const totalGames = data.length;
     const totalCCU = data.reduce((acc, game) => acc + game.playing, 0);
     const totalVisits = data.reduce((acc, game) => acc + game.visits, 0);
-    const totalMembers = 141831;
+    const totalMembers = 156298;
 
     animateCounter("stat-games", totalGames);
     animateCounter("stat-ccu", totalCCU);
@@ -575,6 +577,7 @@ window.onload = () => {
   </script>
 </body>
 </html>
+
 
 
 
